@@ -34,17 +34,17 @@ for (let i = 0; i < data.length; i++) {
     DocCeo.innerHTML +=
         `
         <div class ="InsCard">
+
         <div class ="images"> 
-        <img src="${data[i].img}" alt="DocCeo">
+        <img src="${data[i].img}" alt="hel" id="img">
         </div>
+
        <div class = "textArea">
         <h2>${data[i].name}</h2>
         <h3>${data[i].profession}</h3>
         <p>${data[i].text}</p>
         </div>
-
-      
-
+        
         </div>
     `
 

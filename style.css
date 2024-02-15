@@ -33,11 +33,11 @@
     background-color: green;
     border-radius: 50%;
     width: 50%;
-    height: 10vh;
-    position: relative;
+    height: 40vh;
+    /* position: relative; */
 }
 
-img {
-    width: 100%;
-    position: absolute;
+.images img {
+    width: 10%;
+    /* position: absolute;/ */
 }
