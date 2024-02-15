@@ -1,4 +1,4 @@
-let data = [{
+const data = [{
         img: "./Assets/images/webDeveloper.jpeg",
         name: "Susan Smith",
         profession: "WEB DEVELOPER",
@@ -28,3 +28,24 @@ let data = [{
 
 // here are the from html
 const DocCeo = document.querySelector(".main");
+let count = 0;
+
+for (let i = 0; i < data.length; i++) {
+    DocCeo.innerHTML +=
+        `
+        <div class ="InsCard">
+        <div class ="images"> 
+        <img src="${data[i].img}" alt="DocCeo">
+        </div>
+       <div class = "textArea">
+        <h2>${data[i].name}</h2>
+        <h3>${data[i].profession}</h3>
+        <p>${data[i].text}</p>
+        </div>
+
+      
+
+        </div>
+    `
+
+}
