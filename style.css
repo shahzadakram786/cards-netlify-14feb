@@ -27,15 +27,16 @@
             width: 45%;
             height: 80%;
             display: flex;
-            /* overflow: hidden; */
+            overflow: hidden;
             position: relative;
             align-items: center;
         }
         
         .InsCard {
             border-radius: 10px;
-            padding: 1em;
-            width: 95%;
+            /* padding: 1em; */
+            width: 100%;
+            height: 100%;
             background-color: #ffff00;
             display: flex;
             flex-direction: column;
@@ -46,7 +47,7 @@
         }
         
         .images {
-            background-color: #645CFD;
+            margin: 2em;
             border-radius: 50%;
             width: 20%;
             height: 18vh;
@@ -68,6 +69,24 @@
         h3,
         p {
             margin-bottom: 0.5em;
+        }
+        
+        p {
+            word-spacing: -1px;
+            line-height: 1.6;
+        }
+        
+        h3 {
+            font-size: 1em;
+            font-weight: 400;
+            color: blue;
+        }
+        
+        .Cbutn {
+            padding: 5px;
+            font-size: large;
+            font-weight: bolder;
+            color: blue;
         }
         /* .container {
     width: 80%;

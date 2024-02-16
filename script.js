@@ -94,7 +94,11 @@ for (let i = 0; i < data.length; i++) {
         <h3>${data[i].profession}</h3>
         <p>${data[i].text}</p>
         </div>
-
+        <div class="myButns">
+          <button id="pre" onclick="prevSlide()" class="Cbutn"> < </button>
+          <button id="nex" onclick="nextSlide()" class="Cbutn"> > </button>
+        </div>
+    <button id="random" onclick="random()" class="Sbtn"> Surprise me<button>
         </div>`
 }
 
