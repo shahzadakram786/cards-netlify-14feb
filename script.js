@@ -101,22 +101,32 @@ for (let i = 0; i < data.length; i++) {
 
 
 const slides = document.querySelectorAll(".InsCard");
+const counts = 0;
 slides.forEach(
     (slide, index) => {
         slide.style.left = `${index * 100}%`
 
     }
 )
+const slideImage = () => {
 
-// function showSlide(n) {
-//     count += n;
-//     if (count < 0) {
-//         count = data.length - 1;
-//     } else if (count >= data.length) {
-//         count = 0;
-//     }
-//     displaySlide();
-// }
+        slides.forEach(
+            (slide) => {
+                slide.style.transform = `translateX(-${counts * 100}%)`;
+            })
+
+
+
+    }
+    // function showSlide(n) {
+    //     count += n;
+    //     if (count < 0) {
+    //         count = data.length - 1;
+    //     } else if (count >= data.length) {
+    //         count = 0;
+    //     }
+    //     displaySlide();
+    // }
 
 // function displaySlide() {
 //     const slides = document.querySelectorAll(".InsCard");
