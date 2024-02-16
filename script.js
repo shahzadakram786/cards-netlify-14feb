@@ -98,35 +98,45 @@ for (let i = 0; i < data.length; i++) {
         </div>`
 }
 
-function showSlide(n) {
-    count += n;
-    if (count < 0) {
-        count = data.length - 1;
-    } else if (count >= data.length) {
-        count = 0;
+
+
+const slides = document.querySelectorAll(".InsCard");
+slides.forEach(
+    (slide, index) => {
+        slide.style.left = `${index * 100}%`
+
     }
-    displaySlide();
-}
+)
 
-function displaySlide() {
-    const slides = document.querySelectorAll(".InsCard");
-    slides.forEach((slide, index) => {
-        if (index === count) {
-            slide.style.display = "block";
-        } else {
-            slide.style.display = "none";
-        }
-    });
-}
+// function showSlide(n) {
+//     count += n;
+//     if (count < 0) {
+//         count = data.length - 1;
+//     } else if (count >= data.length) {
+//         count = 0;
+//     }
+//     displaySlide();
+// }
 
-document.addEventListener("DOMContentLoaded", () => {
-    displaySlide();
-});
+// function displaySlide() {
+//     const slides = document.querySelectorAll(".InsCard");
+//     slides.forEach((slide, index) => {
+//         if (index === count) {
+//             slide.style.display = "block";
+//         } else {
+//             slide.style.display = "none";
+//         }
+//     });
+// }
 
-function prevSlide() {
-    showSlide(-1);
-}
+// document.addEventListener("DOMContentLoaded", () => {
+//     displaySlide();
+// });
 
-function nextSlide() {
-    showSlide(1);
-}
+// function prevSlide() {
+//     showSlide(-1);
+// }
+
+// function nextSlide() {
+//     showSlide(1);
+// }
