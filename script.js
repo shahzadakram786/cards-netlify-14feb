@@ -79,7 +79,6 @@ const data = [{
 ];
 
 const docCeo = document.querySelector(".main");
-let count = 0;
 
 for (let i = 0; i < data.length; i++) {
     docCeo.innerHTML +=
@@ -105,32 +104,55 @@ for (let i = 0; i < data.length; i++) {
 
 
 const slides = document.querySelectorAll(".InsCard");
-const counts = 0;
+var count = 0;
 slides.forEach(
     (slide, index) => {
         slide.style.left = `${index * 100}%`
 
     }
 )
+
+
+
+let nextSlide = () => {
+    if (count == 3) {
+        count = -1;
+    }
+    count++;
+    slideImage()
+
+
+}
+
+let prevSlide = () => {
+    if (count == 0) {
+        count = 4;
+    }
+    count--;
+    slideImage()
+
+}
+
+
 const slideImage = () => {
 
-        slides.forEach(
-            (slide) => {
-                slide.style.transform = `translateX(-${counts * 100}%)`;
-            })
+    slides.forEach(
+        (slide) => {
+            slide.style.transform = `translateX(-${count * 100}%)`;
+        })
+
+}
 
 
-
-    }
-    // function showSlide(n) {
-    //     count += n;
-    //     if (count < 0) {
-    //         count = data.length - 1;
-    //     } else if (count >= data.length) {
-    //         count = 0;
-    //     }
-    //     displaySlide();
-    // }
+// function showSlide(n) {
+//     count += n;
+//     if (count < 0) {
+//         count = data.length - 1;
+//     } else if (count >= data.length) {
+//         count = 0;
+//     }
+//     displaySlide();
+// }
 
 // function displaySlide() {
 //     const slides = document.querySelectorAll(".InsCard");
