@@ -55,18 +55,18 @@
     font-size: 1.4em;
     /* position: absolute; */
     background-color: #645CFD;
-    padding: 15px;
+    padding: 10px;
     border-radius: 50%;
     color: white;
     position: absolute;
     z-index: 2;
-    left: 33%;
-    top: 12%;
+    left: 36%;
+    top: 8%;
 }
 
 .images {
-    width: 30%;
-    height: 40%;
+    width: 25%;
+    height: 35%;
     background-color: #645CFD;
     display: block;
     /* position: absolute; */

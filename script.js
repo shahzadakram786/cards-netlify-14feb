@@ -116,6 +116,14 @@ slides.forEach(
 
 
 
+
+
+
+
+
+
+
+
 let nextSlide = () => {
     if (count == 3) {
         count = -1;
@@ -134,7 +142,11 @@ let prevSlide = () => {
     slideImage()
 
 }
-
+let random = () => {
+    let randomIndex = Math.floor(Math.random() * 4);
+    count = randomIndex;
+    slideImage();
+}
 
 const slideImage = () => {
 
@@ -144,6 +156,7 @@ const slideImage = () => {
         })
 
 }
+
 
 
 // function showSlide(n) {
