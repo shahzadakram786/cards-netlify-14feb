@@ -143,7 +143,7 @@ let prevSlide = () => {
 
 }
 let random = () => {
-    let randomIndex = Math.floor(Math.random() * 4);
+    let randomIndex = Math.floor(Math.random() * data.length);
     count = randomIndex;
     slideImage();
 }
