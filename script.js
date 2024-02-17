@@ -82,9 +82,11 @@ const docCeo = document.querySelector(".main");
 
 for (let i = 0; i < data.length; i++) {
     docCeo.innerHTML +=
-        `        <div class ="InsCard">
-
+        `      
+          <div class ="InsCard">
+          
         <div class ="images"> 
+        <i class="fa-solid fa-quote-right"></i>
         <img src="${data[i].img}" alt="hel" id="img">
         </div>
 
