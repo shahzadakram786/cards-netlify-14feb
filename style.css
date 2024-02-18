@@ -29,7 +29,7 @@
     width: 35%;
     height: 50vh;
     display: flex;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
     align-items: center;
 }
